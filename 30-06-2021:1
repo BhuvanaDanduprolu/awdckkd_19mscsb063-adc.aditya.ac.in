@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int x=sc.nextInt();
+	    int y=sc.nextInt();
+	    int rem,rev =0;
+	    int remain,reverse=0;
+        while(n>0)
+        {
+            rem=n%10;
+            if(rem==x)
+            rem=y;
+            rev=rev*10+rem;
+            n/=10;
+        }
+		int t=rev;
+		while(t>0)
+		{
+		 remain=t%10;
+		 reverse=reverse*10+remain;
+		 t/=10;
+		}
+		System.out.println(reverse);
+	}
+}
+------------------------------------------------
+output:
+16719
+1
+8
+86789
