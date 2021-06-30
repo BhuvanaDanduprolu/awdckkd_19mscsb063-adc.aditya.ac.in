@@ -35,3 +35,8 @@ static int countEvenOdd(int n)
          
     }
 }
+-------------------------------------------
+    output:
+Even Count = 3
+Odd Count = 3
+    No
