@@ -6,7 +6,7 @@ public class Main
 		int n=sc.nextInt();
 		int mul;		   
 		mul=n*n;
-	  if(mul%10==n)
+	  if(mul%10==n%10)
 	  System.out.println("Automorphic");
 		else
 		System.out.println("Not Automorphic");
