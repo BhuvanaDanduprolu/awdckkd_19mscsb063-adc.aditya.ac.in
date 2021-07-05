@@ -1,0 +1,33 @@
+import java.util.*;
+public class Array
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int size,i;
+		System.out.println("Enter arrary size");
+		size=sc.nextInt();
+		int a[]=new int[size];
+		System.out.println("Enter array elements");
+		for(i=0;i<size;i++)
+		{
+		    a[i]=sc.nextInt();
+		}
+		int min=a[0];
+		for(i=1;i<size;i++)
+		{
+		    min=(int)(Math.min(a[i],min));
+		}
+		System.out.println("Minimum element is:"+min);
+	}
+}
+-------------------------------------------------
+output:
+Enter array size
+5
+Enterb array elements
+45
+64
+34
+78
+54
+Minimum element is:34
