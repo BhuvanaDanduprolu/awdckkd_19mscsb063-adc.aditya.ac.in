@@ -1,0 +1,40 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter array size");
+		int size=sc.nextInt();
+		int i;
+		int a[]=new int[size];
+		System.out.println("enter array elements");
+		for(i=0;i<size;i++)
+		{
+		    a[i]=sc.nextInt();
+		}
+		int n=0,k=0;
+		for(i=0;i<size;i++)
+		{
+		    if(a[i]%2==0)
+		    n++;
+		    else
+		    k++;
+		}
+		System.out.println("even count = "+n);
+	    System.out.println("odd count = "+k);
+		System.out.println("multiplication of even and odd count = "+(n*k));
+	}
+}
+------------------------------------------------------------------
+ouput:
+enter array size
+5
+enter array elements
+43
+56
+78
+4
+7
+even count = 3
+odd count = 2
+multiplication of even and odd count = 6
