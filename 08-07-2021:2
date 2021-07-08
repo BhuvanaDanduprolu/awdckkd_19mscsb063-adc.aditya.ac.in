@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter array size");
+		int n=sc.nextInt();
+		System.out.println("enter left rotations");
+		int r=sc.nextInt();
+		System.out.println("enter right rotations");
+		int s=sc.nextInt();
+		int i;
+		int a[]=new int[n];
+		int b[]=new int[n];
+		int c[]=new int[n];
+		System.out.println("enter array elements");
+		for(i=0;i<n;i++)
+        a[i]=sc.nextInt();
+        for(i=0;i<n;i++)
+        {
+            if((i-r)<0)
+            b[n+i-r]=a[i];
+            else
+            b[i-r]=a[i];
+        }
+        for(i=0;i<n;i++)
+        {
+            if((i-s)<0)
+            c[i]=b[n+i-s];
+            else
+            c[i]=b[i-s];
+        }
+        for(i=0;i<n;i++)
+        System.out.print(c[i]+" ");
+	}
+}
+---------------------------------------------------------
+output:
+enter array size
+7
+enter right rotations
+3
+enter left rotations
+3
+enter array elements
+1
+2
+3
+4
+5
+6
+7
+2 3 4 5 6 7 1
