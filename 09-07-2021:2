@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	   String a;
+	   int m=0;
+	   Scanner sc=new Scanner(System.in);
+	   System.out.print(" enter string data:");
+	   a=sc.nextLine();
+	   String ch[]=a.split(" ");
+	   int n=ch.length;
+	   if(n==0)
+	   System.out.print(n);
+	   else
+	   {
+	       for(int i=0;i<ch.length;i++)
+	       {
+	            a=ch[i];
+	            m=m+a.length();
+	       }
+	        System.out.print(m);
+	   }
+	}
+}
+--------------------------------------------------
+output:
+enter string data: Aditya degree college
+19
