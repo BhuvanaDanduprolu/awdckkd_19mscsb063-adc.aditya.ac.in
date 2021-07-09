@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	   String a;
+	   Scanner sc=new Scanner(System.in);
+	   System.out.print(" enter string: ");
+	   a=sc.nextLine();
+	   int b=0,c=0,d=0,e=0;
+	   char ch[]=a.toCharArray();
+	   for(int i=0;i<ch.length;i++)
+	   {
+	       if(Character.isUpperCase(ch[i]))
+	       b++;
+            else if(Character.isLowerCase(ch[i]))
+	        c++;
+	        else if(Character.isDigit(ch[i]))
+	        d++;
+	        else
+	        e++;
+	   }
+	   System.out.println("Total no. of Upper: "+b);
+	   System.out.println("Total no. of Lower: "+c);
+       System.out.println("Total no. of Digits: "+d);
+       System.out.println("Total no. of Symbols: "+e);
+       if(b==c&&b==d&&b==e&&c==d&&c==e&&d==e)
+       System.out.print("yes");
+       else
+       System.out.println("no");
+	}
+}
+-------------------------------------------------------
+output:
+enter string: Aditya@123
+Total no. of Upper: 1
+Total no. of Lower: 5
+Total no. of Digits: 3
+Total no. of Symbols: 1
+no
