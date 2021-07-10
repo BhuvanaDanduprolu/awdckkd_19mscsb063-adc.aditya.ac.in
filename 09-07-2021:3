@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String  n;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter String:");
+        n=sc.nextLine();
+        String m="";
+        int k=n.length();
+        for(int i=k-1;i>=0;i--)
+         m=m+n.charAt(i);
+            if(n.equals(m))
+                System.out.println("Palindrome");
+            else
+                System.out.println("not a palindrome");
+	}
+}
+----------------------------------------------------------
+output:
+enter string
+madam
+palindrome
