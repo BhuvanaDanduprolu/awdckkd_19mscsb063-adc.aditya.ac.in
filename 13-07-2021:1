@@ -1,0 +1,48 @@
+Import java.util.Scanner;
+
+public class Main
+
+{
+
+public static void main(String[] args) {
+
+Scanner sc=new Scanner(System.in);
+
+String str=sc.nextLine();
+
+int q=sc.nextInt();
+
+int i=1;
+
+while(i<=q)
+
+{
+
+System.out.print("enter the position of the string: ");
+
+int p=sc.nextInt();
+
+System.out.print("enter inserting string: ");
+
+String ins=sc.next();
+
+StringBuffer sb=new StringBuffer(str);
+
+sb.insert(p,ins);
+
+System.out.println(sb.toString());
+
+i++;
+
+}
+
+}
+Output:
+Hello world
+2
+enter the position of the string: 2
+enter inserting string: x
+Hexllo world 
+enter the position of the string: 3
+enter inserting string: I
+HelIlo world
