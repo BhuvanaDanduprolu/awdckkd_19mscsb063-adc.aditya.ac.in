@@ -1,0 +1,23 @@
+import java.util.*;
+class Factorial 
+{
+public static void main(String[] args) 
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter a number: ");
+ int n=sc.nextInt();
+ int factorial = n*fact(n-1);
+System.out.println("Factorial of  given number " +  n + " : " +  factorial);
+}
+static int fact(int n)
+    {
+        if (n >= 1)
+            return n * fact(n - 1);
+       else
+            return 1;
+    }
+}
+Output:
+Enter a number: 
+5
+Factorial of given number 5: 120
