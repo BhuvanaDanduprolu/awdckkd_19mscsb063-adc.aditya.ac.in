@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    ArrayList<Integer> a=new ArrayList<Integer>();
+	    ArrayList<Integer> b=new ArrayList<Integer>();
+	    System.out.print("enter the element of a: ");
+	    a.add(sc.nextInt());
+	    System.out.print("enter the elements of b: ");
+	    b.add(sc.nextInt());
+	    a.addAll(b);
+	    Collections.sort(a);
+		System.out.println(a);
+	}
+}
+-------------------------------------------------------------------
+output:
+enter the element
