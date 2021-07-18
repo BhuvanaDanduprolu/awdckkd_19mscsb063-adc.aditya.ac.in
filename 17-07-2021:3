@@ -1,0 +1,26 @@
+https://leetcode.com/problems/design-hashset/submissions/
+----------------------------------------------------------
+class MyHashSet {
+    HashSet<Integer> h1;
+
+    /** Initialize your data structure here. */
+    public MyHashSet() {
+        h1=new HashSet<Integer>();
+    }
+    
+    public void add(int key) {
+        h1.add(key);
+    }
+    
+    public void remove(int key) {
+        h1.remove(key);
+    }
+    
+    /** Returns true if this set contains the specified element */
+    public boolean contains(int key) {
+         if(h1.contains(key))  
+        return true;
+        else
+            return false;
+    }
+}
