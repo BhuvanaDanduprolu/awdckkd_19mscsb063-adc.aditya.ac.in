@@ -1,0 +1,29 @@
+import java.util.*;
+class Main
+{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+	    Vector v=new Vector();
+	    v.add(101);
+	    v.add("Rama");
+	    v.add(6.58);
+	    v.add(102);
+	    v.add("Gita");
+	    v.add(8.98);
+	    System.out.println(v);
+	    v.remove("Gita");
+	    System.out.println(v);
+	    v.set(2,9.17);
+	     System.out.println(v);
+	     v.contains("Sita");
+	     System.out.println(v.contains("Sita"));
+        System.out.println(v);
+    }
+}
+--------------------------------------------------------
+output:
+[101,Rama,6.58,102,Gita]
+[101,Rama,6.58,102]
+[101,Rama,9.17,102]
+false
+[101,Rama,9.17,102]
