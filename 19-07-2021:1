@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+        HashMap<Integer,String> k=new HashMap<Integer,String>();
+        int key;
+        String value;
+        System.out.println("Enter n value");
+        int n=sc.nextInt();
+        System.out.println("Enter key and value");
+        for(int i=0;i<n;i++)
+        {
+            key=sc.nextInt();
+            value=sc.next();
+            k.put(key,value);
+        }
+        System.out.println("Unsorted order is:"+k);
+        TreeMap<Integer,String> p=new TreeMap<Integer,String>(k);
+        System.out.println("Sorted order is:"+p);
+	}
+}
+--------------------------------------------------------------------------
+output:
+Enter n value
+4
+Enter Key and value
+2
+5
+3
+45
+6
+Rama
+7
+HI
+Unsorted order is:{2=5, 3=45, 6=Rama, 7=HI}
+Sorted order is:{2=5, 3=45, 6=Rama, 7=HI}
