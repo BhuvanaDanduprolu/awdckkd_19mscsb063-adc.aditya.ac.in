@@ -1,26 +1,42 @@
-import java.util.*;
+import java.util.*; 
 public class Main
 {
-	public static void main(String[] args) {
-        HashMap<String,Integer> x=new HashMap<String,Integer>();
-        String[] str= {"Rama","Gita","Rama","Lakshmi","Rama","Gita","Lakshmi","Sita","Lakshmi"};
-        for(int i=0;i<str.length;i++)
+ public static void main(String args[])
+ {
+      HashMap<String,Integer> x=new HashMap<String,Integer>();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter no. of strings:");
+        int n=sc.nextInt();
+        String[] str=new String[n];
+        System.out.println("enter elements into the array");
+        for(int i=0;i<n;i++)
         {
-            String key;
-            key=str[i];
-            if(x.containsKey(key))
-            x.put(key,x.get(key)+1);
+            str[i]=sc.next();
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(x.containsKey(str[i]))
+            x.put(str[i],x.get(str[i])+1);
             else
-            x.put(key,1);
+            x.put(str[i],1);    
         }
-        for (Map.Entry<String, Integer> i : x.entrySet())
-        {
-            if(i.getValue()>2)
-            System.out.println(i.getKey() + "=" + i.getValue());
-        }
-	}
+        for (Map.Entry<String,Integer> j: x.entrySet())
+        if (j.getValue() >2 )
+        System.out.println(j.getKey()+ "="+j.getValue());
+    }
 }
 ----------------------------------------------------------------------------------
 output:
+enter no. of strings: 9
+enter elements into the array
+Rama
+Gita
+Rama
+Lakshmi
+Rama
+Gita
+Lakshmi
+Sita
+Lakshmi
 Rama=3
 Lakshmi=3
