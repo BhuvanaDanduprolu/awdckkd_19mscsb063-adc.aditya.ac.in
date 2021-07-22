@@ -13,7 +13,8 @@ public class Main
             int salary=in.nextInt();
             x.put(key,salary);
         }
-        System.out.println(x);
+          TreeMap t=new TreeMap(x);
+          System.out.println(t);
         int a;
         System.out.print("Enter the key to search: ");//102
         int s=in.nextInt(); 
@@ -21,13 +22,14 @@ public class Main
         {
             a=x.get(s);
             a+=5000;
-            x.put(s,a);
-            System.out.println(x);
+            t.put(s,a);
+            System.out.println(t);
         }
         else
         System.out.println("Value not found");
     }
 }
+
 ---------------------------------------------------------------------------------------
 output:
 Enter the no. of elements:
@@ -38,6 +40,6 @@ Enter the key and salary:
 103    35000
 104    40000
 105    45000
-{105=45000, 104=40000, 103=35000, 102=45000, 101=50000}
+{101=50000, 102=45000, 103=35000, 104=40000, 105=45000}
 Enter the key to search: 103
-{105=45000, 104=40000, 103=40000, 102=45000, 101=50000}
+{101=50000, 102=45000, 103=40000, 104=40000, 105=45000}
