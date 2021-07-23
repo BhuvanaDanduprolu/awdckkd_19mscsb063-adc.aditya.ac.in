@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main 
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter no. of elements:");
+        int n=sc.nextInt();
+        Stack<Integer> a=new Stack<Integer>();
+        System.out.println("enter the elements:");
+        for(int i=0;i<n;i++)
+        {
+            a.push(sc.nextInt());
+        }
+        System.out.println(a);
+        System.out.println("Maximum value: "+Collections.max(a));
+        System.out.println("Minimum value: "+Collections.min(a));
+    }
+}
+-----------------------------------------------------------------------
+output:
+enter no. of elements:
+4
+enter the elements:
+12
+45
+63
+3
+[12, 45, 63, 3]
+Maximum value: 63
+Minimum value: 3
