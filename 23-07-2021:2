@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string");
+        String s=sc.nextLine();
+        Stack<Character> st=new Stack<Character>();
+        char[] ch=s.toCharArray();
+        for(int i=0;i<ch.length;i++)
+        {
+            st.push(ch[i]);
+        }
+        for(int i=0;i<ch.length;i++)
+        {
+            System.out.print(st.pop());
+        }
+    }
+}
+-------------------------------------------------------------
+output:
+enter the string
+ADITYA
+AYTIDA
