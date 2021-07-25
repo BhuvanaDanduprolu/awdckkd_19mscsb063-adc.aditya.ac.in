@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the no. of elements: ");
+		int n=sc.nextInt();
+		ArrayList<Integer> a= new ArrayList<Integer>();
+		System.out.print("enter the array elements: ");
+		for(int i=0;i<n;i++)
+		{
+		    a.add(sc.nextInt());
+		}
+		System.out.println(a);
+		System.out.println("enter the target value: ");
+		int target=sc.nextInt();
+		if(a.contains(target))
+		    System.out.println(a.indexOf(target));
+		else
+		System.out.println(n);
+	}
+}
+-----------------------------------------------
