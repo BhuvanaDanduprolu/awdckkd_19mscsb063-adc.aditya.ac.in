@@ -1,0 +1,43 @@
+import java.util.*;
+class TestClass
+{
+    public static void main(String args[] ) throws Exception 
+    {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int m=sc.nextInt();
+while(m%2==0)
+{
+System.out.print("2"+" ");
+m=m/2;
+}
+for(int i=3;i<=Math.sqrt(m);i+=2)
+{
+while(m%i==0)
+{
+System.out.print(i+" ");
+m=m/i;
+}
+}
+if(m>2)
+System.out.print(m);
+int sum=0,sum1=0;
+for (int i = 2; i <= Math.sqrt(n); i++)
+        {
+            if (n % i == 0 && m%i==0)
+            {
+                if (i == (n / i) && i==(m/i) )
+                {
+                    sum += i;
+                    sum1=sum+i;
+                }
+                else
+                {
+                    sum += (i + n / i);
+                }
+                System.out.println(sum1);
+            }
+        }
+
+}
+}
