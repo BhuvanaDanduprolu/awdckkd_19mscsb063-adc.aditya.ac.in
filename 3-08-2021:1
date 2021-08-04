@@ -1,6 +1,5 @@
 class Solution {
-  public:
-        static long int nthFibonacci( long  n){
+    static long nthFibonacci(long n){
         // code here
         int m=(int)n;
          long prefix[]=new long[m+1];
@@ -12,4 +11,4 @@ class Solution {
         }
         return prefix[m];
     }
-};
+}
