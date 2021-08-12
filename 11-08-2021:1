@@ -1,0 +1,44 @@
+
+import java.util.*;
+public class Main
+{
+ public static void main(String arg[])
+{
+ int[] a= { 4,3,2,1};
+ int[] b = { 6,7,8,4,3,2};
+int m,n,i,j,k;
+ n = a.length; m=b.length;
+ int[] c = new int[n+m];
+i=0;j=0;k=0;
+ while(i<n&&j<m) 
+ {
+if(a[i]<b[j])
+ {
+ c[k]=a[i];
+ k++;i++;
+ }
+ else
+ {
+ c[k]=b[j];
+ k++;j++;
+ }
+ }
+ while(i<n) 
+{
+c[k]=a[i];
+k++; i++;
+ }
+ while(j<m)
+{
+ c[k]=b[j];
+ k++; j++;
+ }
+ System.out.println("Sorted list using merge sort");
+for(k=0;k<n+m;k++)
+ System.out.print(" "+c[k]);
+}
+}
+---------------------------------------------------------
+output:
+Sorted list using merge sort
+4 3 2 1 6 7 8 4 3 2
